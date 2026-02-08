@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Backdoor Verified | Ultimate Roblox Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="scanner-bg">
+        <div class="scanline"></div>
+        <div class="particles"></div>
+    </div>
+
+    <div class="main-wrapper">
+        <header class="app-header">
+            <div class="logo-area">
+                <span class="shield-icon">🛡️</span>
+                <h1 class="main-title">FRIEND <span class="highlight">BACKDOOR</span> VERIFIED</h1>
+            </div>
+            <p class="tagline">Advanced Place & Model Security Auditor for Roblox Studio</p>
+        </header>
+
+        <section class="glass-panel upload-section">
+            <div class="drop-zone" id="dropZone">
+                <div class="upload-art">
+                    <div class="box-3d"></div>
+                    <div class="arrow-down"></div>
+                </div>
+                <h2>DROP YOUR FILE HERE</h2>
+                <p>Supports .rbxl, .rbxm, .rbxmx and .lua</p>
+                <input type="file" id="fileInput" hidden accept=".rbxl,.rbxm,.rbxmx,.lua">
+                <div id="fileInfo" class="file-info hidden">
+                    <span id="fileName">archivo.rbxl</span>
+                    <span class="file-size" id="fileSize">0 KB</span>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button id="analyzeBtn" class="btn-primary" disabled>
+                    <span class="glitch-text">INITIALIZE SCAN</span>
+                </button>
+                <button id="resetBtn" class="btn-secondary">ABORT</button>
+            </div>
+        </section>
+
+        <section id="resultsArea" class="results-container hidden">
+            <div class="stats-grid">
+                <div class="glass-card risk-meter-card">
+                    <h3>THREAT PROBABILITY</h3>
+                    <div class="circular-progress">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="prog" cx="50" cy="50" r="45" id="circleProgress"></circle>
+                        </svg>
+                        <div class="percentage" id="percValue">0%</div>
+                    </div>
+                    <div id="statusLabel" class="status-badge">STANDBY</div>
+                </div>
+
+                <div class="glass-card analytics-card">
+                    <h3>DETAILED ANALYTICS</h3>
+                    <div class="log-viewer" id="logViewer">
+                        <div class="log-entry system">Waiting for file input...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-bar">
+        <div class="system-status">
+            <span class="dot"></span> SYSTEM READY
+        </div>
+        <a href="https://discord.gg/qKPxDXJMU8" target="_blank" class="discord-tag">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+            https://discord.gg/qKPxDXJMU8
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
